@@ -1,11 +1,12 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Input } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
         <Text style={styles.text}>pluck</Text>
+        <Input type="file" />
       </View>
     </View>
   );
