@@ -1,10 +1,12 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.card}>
+        <Text style={styles.text}>pluck</Text>
+      </View>
     </View>
   );
 }
@@ -12,8 +14,28 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "lightgrey",
+    alignItems: "center",
+    justifyContent: "center",
   },
+  card: {
+    backgroundColor: "lightblue",
+    width: 150,
+    height: 100,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 25,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.00,
+    elevation: 24,
+  },
+  text: {
+    color: "navy",
+    fontSize: 23,
+  }
 });
