@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, Input } from "react-native";
 
 export default function App() {
   const [fileInput, setFileInput] = useState(null)
-  
+  const [filePath, setFilePath] = useState('')
+
   return (
     <View style={styles.container}>
       <View style={styles.card}>
