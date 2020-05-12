@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View, Input } from "react-native";
 
 export default function App() {
+  const [fileInput, setFileInput] = useState(null)
+  
   return (
     <View style={styles.container}>
       <View style={styles.card}>
